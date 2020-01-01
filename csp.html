@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+
+</head>
+
+<body class="uk-background-muted uk-padding uk-panel">
+
+
+    <div class="uk-child-width-1-1@m" uk-grid
+        uk-scrollspy="cls: uk-animation-fade; target: .uk-card, .uk-heading-divider; delay: 5; repeat: true">
+
+
+        <ul class="uk-breadcrumb uk-position-top-left">
+            <a href="index.html" uk-icon="home"></a>
+            <li><span>Computer Science Principles</span></li>
+        </ul>
+
+        <div uk-filter="target: .js-filter">
+
+            <ul class="uk-subnav uk-subnav-pill">
+                <li class="uk-active" uk-filter-control><a href="#">All</a></li>
+                <li uk-filter-control=".tag-unit1"><a href="#">Unit 1</a></li>
+                <li uk-filter-control=".tag-unit2"><a href="#">Unit 2</a></li>
+                <li uk-filter-control=".tag-unit3"><a href="#">Unit 3</a></li>
+                <li uk-filter-control=".tag-unit4"><a href="#">Unit 4</a></li>
+                <li uk-filter-control=".tag-unit5"><a href="#">Unit 5</a></li>
+            </ul>
+
+            <ul class="js-filter uk-child-width-1  uk-text-center" uk-grid>
+
+                <h3 class="uk-heading-divider">Unit 1</h3>
+
+                <li class="tag-unit1">
+                    <div class="uk-card uk-card-primary uk-card-body uk-card-hover uk-card-small">
+                        <h3 class="uk-card-title">Week 1</h3>
+                        <a href="week1.html">Intro to Computer Science Principles</a>
+
+                        <div class="uk-card-badge uk-label">Homework</div>
+                    </div>
+                </li>
+                <li class="tag-unit1">
+                    <div class="uk-card uk-card-primary uk-card-body uk-card-hover uk-card-small">
+                        <h3 class="uk-card-title">Week 1</h3>
+                        <a href="week1.html">Intro to Computer Science Principles</a>
+
+                        <div class="uk-card-badge uk-label">Homework</div>
+                    </div>
+                </li>
+                <li class="tag-unit1">
+                    <div class="uk-card uk-card-primary uk-card-body uk-card-hover uk-card-small">
+                        <h3 class="uk-card-title">Week 1</h3>
+                        <a href="week1.html">Intro to Computer Science Principles</a>
+
+                        <div class="uk-card-badge uk-label">Homework</div>
+                    </div>
+                </li>
+                <li class="tag-unit1">
+                    <div class="uk-card uk-card-primary uk-card-body uk-card-hover uk-card-small">
+                        <h3 class="uk-card-title">Week 1</h3>
+                        <a href="week1.html">Intro to Computer Science Principles</a>
+
+                        <div class="uk-card-badge uk-label">Homework</div>
+                    </div>
+                </li>
+                <li class="tag-unit1">
+                    <div class="uk-card uk-card-primary uk-card-body uk-card-hover uk-card-small">
+                        <h3 class="uk-card-title">Week 1</h3>
+                        <a href="week1.html">Intro to Computer Science Principles</a>
+
+                        <div class="uk-card-badge uk-label">Homework</div>
+                    </div>
+                </li>
+
+                <h3 class="uk-heading-divider">Unit 2</h3>
+
+                <li class="tag-unit2">
+                    <div class="uk-card uk-card-secondary uk-card-body uk-card-hover uk-card-small">
+                        <h3 class="uk-card-title">Week 2</h3>
+                        <a href="week1.html">Layers of the Internet</a>
+
+                        <div class="uk-card-badge uk-label">Homework</div>
+                    </div>
+                </li>
+
+                <h3 class="uk-heading-divider">Unit 3</h3>
+
+                <li class="tag-unit3">
+                    <div class="uk-card uk-card-default uk-card-body uk-card-hover uk-card-small">
+                        <h3 class="uk-card-title">Week 3</h3>
+                        <a href="week1.html">Operating Systems</a>
+
+                        <div class="uk-card-badge uk-label">Homework</div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <a href="#" uk-center uk-totop uk-scroll></a>
+
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

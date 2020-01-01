@@ -1,25 +1,32 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta charset="utf-8" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<title>The JSON methods</title>
-	</head>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>The JSON methods</title>
+</head>
+
 <body>
-<h3>The JSON methods</h3>
+    <h3>The JSON methods</h3>
 
-<h6>Unit 2: Week 17 - Lesson 2</h6>
+    <h6>Unit 2: Week 17 - Lesson 2</h6>
 
-<p>Since javascript and json go hand-in-hand, the javascript developers created a method specifically for working with objects stored in .json files.</p>
+    <p>Since javascript and json go hand-in-hand, the javascript developers created a method specifically for working
+        with objects stored in .json files.</p>
 
-<h4><mark>the JSON object - a special javascript object with methods designed to transform and utilize objects from a .json file. </mark></h4>
+    <h4><mark>the JSON object - a special javascript object with methods designed to transform and utilize objects from
+            a .json file. </mark></h4>
 
-<p>Since <code>.json</code> files must be small and easy to transmit across the internet, javascript must be able to translate objects from a <code>.json</code> file from their string form and into an actual javascript object. To do this, we use <code>JSON.parse()</code>.</p>
+    <p>Since <code>.json</code> files must be small and easy to transmit across the internet, javascript must be able to
+        translate objects from a <code>.json</code> file from their string form and into an actual javascript object. To
+        do this, we use <code>JSON.parse()</code>.</p>
 
-<h4><mark>JSON.parse() - a method used to translate text from a .json file and into a proper javascript object.</mark></h4>
+    <h4><mark>JSON.parse() - a method used to translate text from a .json file and into a proper javascript
+            object.</mark></h4>
 
-<pre><code class="code-highlighted code-js"><span class="syntax-all syntax-comment">// example 1 - using text recieved from a .json file
+    <pre><code class="code-highlighted code-js"><span class="syntax-all syntax-comment">// example 1 - using text recieved from a .json file
 </span>
 <span class="syntax-all syntax-keyword">var</span> <span class="syntax-all syntax-parameter">boat</span> <span class="syntax-all syntax-keyword">=</span> <span class="syntax-all syntax-constant">JSON</span><span class="syntax-all syntax-keyword">.</span><span class="syntax-all syntax-variable">parse</span>(<span class="syntax-all syntax-string">&#39;{&quot;name&quot;: &quot;titantic&quot;, &quot;carryCapacity&quot;: &quot;2435&quot;, &quot;inOperation&quot;: &quot;false&quot;}&#39;</span>)
 
@@ -28,10 +35,10 @@
 </span><span class="syntax-all syntax-comment">// titantic
 </span></code></pre>
 
-<h4><mark>JSON.stringify() - a method used to convert a javascript object into a string for .json storage.
-</mark></h4>
+    <h4><mark>JSON.stringify() - a method used to convert a javascript object into a string for .json storage.
+        </mark></h4>
 
-<pre><code class="code-highlighted code-js"><span class="syntax-all syntax-comment">// example 2 - converting a javascript object into text for a .json file
+    <pre><code class="code-highlighted code-js"><span class="syntax-all syntax-comment">// example 2 - converting a javascript object into text for a .json file
 </span>
 <span class="syntax-all syntax-keyword">var</span> <span class="syntax-all syntax-parameter">boat</span> <span class="syntax-all syntax-keyword">=</span> {<span class="syntax-all syntax-string">name</span><span class="syntax-all syntax-constant">:</span> <span class="syntax-all syntax-string">&quot;titantic&quot;</span>, 
 <span class="syntax-all syntax-string">carryCapacity</span><span class="syntax-all syntax-constant">:</span> <span class="syntax-all syntax-constant">2435</span>, 
@@ -45,16 +52,20 @@
 </span><span class="syntax-all syntax-comment">// &#39;{&quot;name&quot;:&quot;titantic&quot;,&quot;carryCapacity&quot;:&quot;2435&quot;,&quot;inOperation&quot;:&quot;false&quot;}&#39;
 </span></code></pre>
 
-<p>We can now efficiently communicate data across applications and servers! </p>
+    <p>We can now efficiently communicate data across applications and servers! </p>
 
-<p>However, always be aware that a <code>.json</code> file purely contains data in the form of properties. As a result—<em>you can not pass methods through a <code>json</code> file!</em></p>
+    <p>However, always be aware that a <code>.json</code> file purely contains data in the form of properties. As a
+        result—<em>you can not pass methods through a <code>json</code> file!</em></p>
 
-<p>We must continue to use prototypes to handle the creation of methods otherwise we will lose lots of memory efficiency.</p>
+    <p>We must continue to use prototypes to handle the creation of methods otherwise we will lose lots of memory
+        efficiency.</p>
 
-<hr />
+    <hr />
 
-<p>Bonus - <a href="https://www.w3schools.com/js/js_json_objects.asp">https://www.w3schools.com/js/js_json_objects.asp</a></p>
+    <p>Bonus - <a
+            href="https://www.w3schools.com/js/js_json_objects.asp">https://www.w3schools.com/js/js_json_objects.asp</a>
+    </p>
 
 </body>
-</html>
 
+</html>
